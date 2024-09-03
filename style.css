@@ -1,0 +1,385 @@
+ 
+/* About page styling */
+.about-container {
+    padding: 20px; /* Ensure there's enough padding to see the border */
+    border-left: 5px solid #ffffff; /* Green vertical line on the left */
+    margin-top: 110px;
+    margin-left: 20px; /* Add some space between the line and the edge of the viewport */
+    background-color: #000000; /* Background color for contrast */
+    color: #ffffff; /* White text for readability */
+}
+
+.about-container h1 {
+    color: #ffffff; /* Change this to any color you want for the heading */
+    font-size: 2.5rem; /* Adjust the font size if needed */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.about-container p {
+    color: #ffffff; /* Ensure paragraph text is white */
+    font-size: 1.2rem; /* Adjust font size for paragraph text */
+    line-height: 1.6;
+}
+
+/* General body styling */
+body {
+    font-family: DM Serif, Libre Baskerville, Ramaraja, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Pure black background */
+    color: #ffffff; /* White text color */
+}
+
+/* Center the image vertically and horizontally */
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    min-height: 100vh; /* Makes sure the content takes up at least 100% of the viewport height */
+    padding-left: 20px; /* Add some padding on the left */
+    text-align: left;
+    fle
+}
+
+/* Image styling */
+.center-image {
+    max-width: 115%; /* Ensure the image does not overflow */
+    height: auto;
+    border-radius: 10px;
+    border: none;
+    margin: 150px 0;
+    margin-top: 100px;
+    margin-left: -20px;
+}
+
+/* Text styling */
+.homepage h1 {
+    color: #ffffff;
+    font-size: 3rem; /* Large and consistent font size */
+    margin-top: -140px;
+    margin-left: -20px;
+}
+
+.homepage p {
+    color: #ffffff;
+    font-size: 3rem; /* Large and consistent font size */
+    margin: -20px; /* Adjust spacing as needed */
+    margin-top: -10px;
+    margin-left: -30px;
+    font-weight: bold;
+}
+
+/* Highlight specific words */
+.highlight {
+    color: #ffd700; /* Gold color for highlights */
+    font-size: 4rem;
+    font-weight: bold;
+    display: inline-block; /* Ensure the span wraps text correctly */
+}
+
+/* Headings */
+h1, h2 {
+    color: #ffd700; /* Gold for headings */
+    text-align: left;
+}
+
+/* Schedule a Call button styling */
+#schedule-call-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Black background */
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 50px;
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem; /* Larger font size for button */
+    margin-top: 50px;
+}
+
+#schedule-call-button:hover {
+    background-color: #333333; /* Slightly lighter black on hover */
+}
+
+/* Paragraphs and list items */
+p, ul, li {
+    color: #ffffff; /* Ensure text is white */
+    max-width: 800px;
+    padding: 10px;
+}
+
+/* Buttons and links */
+.button, button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700; /* Gold button background */
+    color: #000000; /* Black text color on button */
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px auto;
+    border: none;
+    font-size: 1.5rem; /* Larger font size for buttons */
+}
+
+.button:hover, button:hover {
+    background-color: #e5c100; /* Slightly darker gold on hover */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00e676;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Form inputs and textareas */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #222222; /* Dark background for inputs */
+    color: #ffffff; /* White text color */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Contact form submit button */
+input[type="submit"] {
+    background-color: #ffd700;
+    color: #000000; /* Black text color on submit button */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5rem; /* Larger font size for submit button */
+}
+
+input[type="submit"]:hover {
+    background-color: #e5c100;
+}
+
+/* Page sections */
+div.homepage, div.about-page, div.video-page, div.experience-page, div.skills-page, div.education-page, div.contact-page {
+    padding: 50px;
+    text-align: left; /* Ensure all sections have left-aligned text */
+}
+
+/* Galleries */
+div.animation-gallery, div.video-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Images and videos in galleries */
+div.animation-gallery img, div.video-gallery video {
+    max-width: 300px;
+    border: 2px solid #ffd700; /* Gold border */
+    border-radius: 10px;
+}
+
+/* Top-left icons styling */
+.icons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.icons a {
+    color: #ffffff; /* White color for icons */
+    font-size: 2.5rem; /* Set icon size */
+    margin-right: 15px; /* Space between icons */
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: #ffffff; /* Gold color on hover */
+}
+
+/* Dashboard menu styling */
+.dashboard {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff; /* Gold color */
+    margin: 4px 0;
+}
+
+.dashboard-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 40px; /* Adjust based on line height */
+    right: 0;
+    background-color: #d4d9d6; /* Dark background for menu */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dashboard-menu.show {
+    display: block; /* Show menu when 'show' class is added */
+}
+
+.dashboard-menu a {
+    color: #000000; /* White text color */
+    font-size: 2rem; /* Set text size */
+    text-decoration: none; /* Remove underline from links */
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #000000; /* Separator between items */
+}
+
+.dashboard-menu a:last-child {
+    border-bottom: none; /* Remove bottom border from last item */
+}
+
+.dashboard-menu a:hover {
+    background-color: #ffffff; /* Slightly lighter background on hover */
+    color: #ffffff; /* Gold text color on hover */
+}
+h99 {
+  
+    
+    font-size: 4rem;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-weight:  bold;
+    text-align: left;
+    
+}
+
+.card {
+    
+    background-color: #171717;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 330px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4), 
+                0 0 10px rgba(255, 215, 0, 0.3), 
+                0 0 10px rgba(255, 215, 0, 0.2); /* Glowing effect */
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 50px;
+    transition: box-shadow 0.001s ease-in-out;
+    animation: glow 0.5s infinite alternate; /* Animation for pulsating effect */
+}
+
+/* Animation for the glowing border */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 
+                    0 0 10px rgba(255, 255, 255, 0.3), 
+                    0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                    0 0 10px rgba(255, 255, 255, 0.6), 
+                    0 0 10px rgba(255, 255, 255, 0.4);
+    }
+}
+.about-container p {
+    line-height: 1.4; /* Reduced line height */
+    margin-bottom: 8px; /* Reduce bottom margin to minimize spacing */
+}
+
+p {
+    line-height: 1.4; /* Reduced line height for paragraphs */
+    margin: 0 0 10px 0; /* Adjust margin to reduce spacing */
+}
+
+h1, h2 {
+    margin: 0 0 10px 0; /* Reduce margin to minimize spacing */
+}
+.card-image {
+     align-items: center;
+    width: 330px;
+    height: 430px;
+    object-fit: cover;
+}
+.card-image2{
+    width : 330px;
+    height: 250px;
+}
+.card-title {
+    font: Ramarja;
+    font-size: 50px;
+    text-align: center;
+    color : #ffffff;
+}
+
+.card-author{
+    text-align: center;
+}
+.card-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-body h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+
+.tags {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+    
+    
+}
+
+.tag {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-left: 10px;
+    
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #bbb;
+    
+}
+
+.card-description{
+    text-align: center;
+}

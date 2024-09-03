@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="icons">
+        <a href="mailto:Aaishwaryajk@gmail.com?subject=Company%20Name%20:" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/aaishwarya-khalane-24816123b" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/aaishwarya0224" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+    <div class="dashboard">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="dashboard-menu" id="dashboardMenu">
+            <a href="index.html">Home</a>
+            
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="homepage">
+        <img src="images/profilephoto.png" alt="Profile Photo" class="center-image">
+        
+        <h1>Hey, it's<br> <span class="highlight">Aaishwarya</span></h1>
+        <p>I'm a <br><span id="typing-effect" class="highlight"></span></p>
+        </div>
+
+    <script src="scripts.js"></script>
+  <div>
+       <button id="schedule-call-button" onclick="window.location.href='contact.html'">Schedule a Call</button>
+ 
+  </div>
+   
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Aaishwarya Khalane</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+        .image-container {
+            width: 100%;
+            margin-top: 30px;
+            overflow: hidden; /* Hide overflow to create a seamless effect */
+            position: relative;
+            background-color: #000000; /* Light background for contrast */
+        }
+        .image-wrapper {
+            display: flex;
+            flex-direction: column; /* Stack rows vertically */
+            width: 200%; /* Twice the width of the container to create a seamless loop */
+            animation: scroll 5s linear infinite; /* Infinite scrolling effect */
+        }
+        .row {
+            display: flex;
+            width: 100%;
+            margin-bottom: 30px; /* Space between rows */
+        }
+        .row img {
+            height: auto;
+            flex: 0 0 auto; /* Prevent image stretching */
+            margin-right: 0px; /* Space between images */
+        }
+        .row img:last-child {
+            margin-right: 0; /* Remove margin from the last image */
+        }
+        .row1 img {
+            width: calc((100% / 6) - 10px); /* Adjust width for spacing */
+        }
+        .row2 img {
+            width: calc((100% / 7) - 10px); /* Adjust width for spacing */
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); } /* Move by the width of the wrapper */
+        }
+        .about-container {
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="image-container">
+        <div class="image-wrapper">
+            <!-- Row 1: 6 Images, repeated 20 times -->
+            <div class="row row1">
+                <img src="images/png1.png" alt="Image 1">
+                <img src="images/png2.png" alt="Image 2">
+                <img src="images/png3.png" alt="Image 3">
+                <img src="images/png4.png" alt="Image 4">
+                <img src="images/png5.png" alt="Image 5">
+                <img src="images/png6.png" alt="Image 6">
+                <img src="images/png1.png" alt="Image 1">
+                <img src="images/png2.png" alt="Image 2">
+                <img src="images/png3.png" alt="Image 3">
+                <img src="images/png4.png" alt="Image 4">
+                <img src="images/png5.png" alt="Image 5">
+                <img src="images/png6.png" alt="Image 6">
+                
+            </div>
+             
+                    
+            <div class="row row2">
+                <img src="images/png7.png" alt="Image 7">
+                <img src="images/png8.png" alt="Image 8">
+                <img src="images/png9.png" alt="Image 9">
+                <img src="images/png10.png" alt="Image 10">
+                <img src="images/png11.png" alt="Image 11">
+                <img src="images/png12.png" alt="Image 12">
+                <img src="images/png13.png" alt="Image 13">
+                    <img src="images/png7.png" alt="Image 7">
+                <img src="images/png8.png" alt="Image 8">
+                <img src="images/png9.png" alt="Image 9">
+                <img src="images/png10.png" alt="Image 10">
+                <img src="images/png11.png" alt="Image 11">
+                <img src="images/png12.png" alt="Image 12">
+                <img src="images/png13.png" alt="Image 13">
+                <!-- Repeat images to ensure looping -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="about-container">
+        <p>I’m Aaishwarya Khalane, a Computer Science Engineering student at G.H. Raisoni College of Engineering, Pune. With experience as a Full-stack Web Developer at DevTown, I have developed a strong foundation in both frontend and backend technologies. I’m passionate about solving complex problems and continuously expanding my skills in the ever-evolving tech landscape. Fluent in English, German, Hindi, and Marathi, I thrive in diverse environments and am eager to take on new challenges.</p>
+    </div>
+
+  
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Frame</title>
+</head>
+<body>
+  
+
+    <video 
+        src="images/video.mp4" 
+        style="border: none; border-radius: 50px; width: 90%; max-width: 900px; height: auto; display: block; margin-left: 10px ;margin-top: 100px ;" 
+        autoplay
+        loop
+        muted
+    >
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h99> Experience</h99>
+</body>
+<body>
+    <!-- First Card -->
+    <div class="card">
+        <img src="images/Internship_Fullstack.jpg" alt="House of X" class="card-image">
+        <div class="card-content">
+            <h1 class="card-title">DevTown</h1>
+            <p class="card-author">Dec. 2022 - Mar. 2023</p>
+            <div class="card-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+            </div>
+            <p class="card-description">
+                Completed a Full-stack Web Development Internship at DevTown, where I gained hands-on experience in building web applications using modern technologies, enhancing both front-end and back-end development skills.
+            </p>
+        </div>
+    </div>
+
+    <!-- Duplicate Card -->
+    <div class="card">
+        <img src="images/Training_Fullstack.jpg" alt="Experience" class="card-image2">
+        <div class="card-content">
+            <h1 class="card-title">DevTown</h1>
+            <p class="card-author">Dec. 2022 - Mar. 2023</p>
+            <div class="card-tags">
+                <span class="tag">Javascript</span>
+                <span class="tag">React.js</span>
+            </div>
+            <p class="card-description">
+                Completed comprehensive training in Full-Stack Web Development at DevTown, covering both front-end and back-end technologies. Gained hands-on experience with HTML, CSS, JavaScript, React, Node.js, Express, and databases, equipping me with the skills to build and deploy dynamic, full-featured web applications.
+                  </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 200px;
+            text-align: left;
+            margin-top : 80px;
+        }
+
+        .education-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top:20px;
+            margin-left:20px;
+          
+        }
+
+        .education-item {
+            display: flex;
+            width: 300px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            align-items: center;
+        }
+
+        .education-logo {
+            width: 70px;
+            height: 70px;
+            margin-right: 15px;
+        }
+
+        .education-details {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .education-details .name {
+            font-weight: bold;
+        }
+
+        .education-details .degree,
+        .education-details .duration {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="section-title">Education</div>
+
+<div class="education-container">
+    <div class="education-item">
+        <img src="images/raisoni.png" alt="University Logo" class="education-logo">
+        <div class="education-details">
+            <div class="name">G. H. Raisoni College of Engineering and Management,Pune.</div>
+            <div class="degree">B.Tech. Computer Science Engineering</div>
+            <div class="duration">2021 - 2024</div>
+        </div>
+    </div>
+
+    <div class="education-item">
+        <img src="images/college.png" alt="College Logo" class="education-logo">
+        <div class="education-details">
+            <div class="name">J.R.City College , Dhule.</div>
+            <div class="degree">Higher Secondary Certificate Examination</div>
+            <div class="duration">2019 - 2021</div>
+        </div>
+    </div>
+
+    <div class="education-item">
+        <img src="images/school.png" alt="School Logo" class="education-logo">
+        <div class="education-details">
+            <div class="name">Canossa Convent High School , Dhule.</div>
+            <div class="degree">Secondary School Certificate Examination</div>
+            <div class="duration">2019</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #000000;
+        }
+
+        .section-title {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-left: 30px;
+            text-align: left;
+            margin-top:50px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom:10px;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            width: 260px;
+            border: 2px solid #ffffff;
+            border-radius: 50px;
+            padding: 10px 20px;
+            background-color: #000000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .skill-item:hover {
+            background-color: #000000;
+            border-color: #008cba;
+            transform: translateY(-3px);
+        }
+
+        .skill-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+
+        .skill-name {
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="section-title">Skills</div>
+
+<div class="skills-container">
+    <div class="skill-item">
+        <img src="images/python.png" alt="Python Icon" class="skill-icon">
+        <span class="skill-name">Python</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/java.png" alt="Java Icon" class="skill-icon">
+        <span class="skill-name">Java</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/javascript.png" alt="JavaScript Icon" class="skill-icon">
+        <span class="skill-name">JavaScript</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/sql.png" alt="SQL Icon" class="skill-icon">
+        <span class="skill-name">SQL</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/fullstackdevelopment.png" alt="Full-Stack Development Icon" class="skill-icon">
+        <span class="skill-name">Full-Stack Development</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/dataanalysis.png" alt="Data Analysis Icon" class="skill-icon">
+        <span class="skill-name">Data Analysis</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/ibmwatson.png" alt="IBM Watson Icon" class="skill-icon">
+        <span class="skill-name">IBM Watson</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/datavisualization.png" alt="Data Visualization Icon" class="skill-icon">
+        <span class="skill-name">Data Visualization</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/datascience.png" alt="Data Science Icon" class="skill-icon">
+        <span class="skill-name">Data Science</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/cloudcomputing.png" alt="Cloud Computing Icon" class="skill-icon">
+        <span class="skill-name">Cloud Computing</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/apitesting.png" alt="API Testing Icon" class="skill-icon">
+        <span class="skill-name">API Testing</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/digitaltransformation.png" alt="Digital Transformation Icon" class="skill-icon">
+        <span class="skill-name">Digital Transformation</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/microsoftpowerpoint.png" alt="Microsoft PowerPoint Icon" class="skill-icon">
+        <span class="skill-name">Microsoft PowerPoint</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/microsoftexcel.png" alt="Microsoft Excel Icon" class="skill-icon">
+        <span class="skill-name">Microsoft Excel</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/softwaretesting.png" alt="Software Testing Icon" class="skill-icon">
+        <span class="skill-name">Software Testing</span>
+    </div>
+    <div class="skill-item">
+        <img src="images/softwaredevelopment.png" alt="Software Development Icon" class="skill-icon">
+        <span class="skill-name">Software Development</span>
+    </div>
+</div>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h95 {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-left: 0px;
+            margin-top:50px;
+            font-size:3rem;
+            
+        }
+
+        .container {
+            background-color: #171717;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: flex-start;
+            height: 200px;
+        }
+
+        .square-frame {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .cert-details {
+            display: flex;
+            flex-direction: column;
+            height:200px;
+        }
+
+        .cert-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: -15px;
+        }
+
+        
+        .cert-issued {
+            font-size: 14px;
+            margin: -5px 0;
+        }
+
+        .cert-skills {
+            font-size: 14px;
+            margin: -5px 0;
+        }
+
+        .cert-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #ffffff;
+            background-color: #171717;
+            border: 1px solid #ffffff;
+            border-radius: 15px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, border-color 0.3s;
+            cursor: pointer;
+        }
+
+        .cert-button:hover {
+            background-color: #1f1f1f;
+            border-color: #e0e0e0;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            position: relative;
+            margin: 10% auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            background-color: #171717;
+            border-radius: 8px;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #ffa500;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #e0e0e0;
+        }
+
+        .modal-image {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h95>Licenses & Certifications</h95>
+
+    <div class="container">
+        <img src="images/IBM.png" alt="IBM Certification Logo" class="square-frame">
+        <div class="cert-details">
+            <p class="cert-title">Getting Started with Enterprise Data Science</p>
+           
+            <p class="cert-issued">Issued Mar 2024</p>
+            <p class="cert-skills">Skills: Data Analysis,IBM Watson,...</p>
+            <a href="https://www.credly.com/badges/b961f531-4d45-439c-95ba-567d66d09daa/public_url" class="cert-button" target="_blank">Credential ID</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/IBM.png" alt="IBM Certification Logo" class="square-frame">
+        <div class="cert-details">
+            <p class="cert-title">IBM CERTIFIED JOURNEY TO CLOUD           </p>
+           
+            <p class="cert-issued">Issued Mar 2024</p>
+            <p class="cert-skills">Skills: Cloud Computing, API Testing,...</p>
+            <a href="https://www.credly.com/badges/7c45f9ea-b54a-4ccf-a7b6-24c1c3e9da0e/public_url" class="cert-button" target="_blank">Credential ID</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/google.png" alt="GDSC Certification Logo" class="square-frame">
+        <div class="cert-details">
+            <p class="cert-title">GDSC - Solution Challenge</p>
+         
+            <p class="cert-issued">Issued Mar 2023</p>
+            <p class="cert-skills">Skills:   Python  ,  Javascript , C++,...</p>
+            <a href="#" class="cert-button" onclick="showModal('images/GDSC.jpg')">View Certificate</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="images/devtown.png" alt="Full-Stack Development Logo" class="square-frame">
+        <div class="cert-details">
+            <p class="cert-title">Full-stack Web Development</p>
+       
+            <p class="cert-issued">Issued Dec 2022, <br>Expired Mar 2023</p>
+            <p class="cert-skills">Skills: Full-Stack Development</p>
+            <a href="#" class="cert-button" onclick="showModal('images/Course_Fullstack.jpg')">View Certificate</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="images/GDSC.jpg" alt="Certificate Image" class="modal-image" id="modalImage">
+        </div>
+    </div>
+
+    <script>
+        // Function to show the modal with the certificate image
+        function showModal(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('certificateModal').style.display = 'block';
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            document.getElementById('certificateModal').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Aligns content towards the top */
+            align-items: center;
+
+            margin: 0;
+            padding-top: 50px; /* Adjust this value to move the content upwards */
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .container {
+            background-color: #171717;
+            border: 2px solid white;
+            border-radius: 15px;
+            padding: 15px;
+            width: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .image-box {
+            width: 80px;
+            height: 80px;
+            border: 2px solid white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+        }
+        .text-and-button {
+            flex-grow: 1;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .text-and-button p {
+            margin: 0 0 10px 0;
+            font-size: 40px;
+            font-weight:bold;
+            text-align:center;
+        }
+        .button {
+            background-color: #171717;
+            border: 2px solid white;
+            color: white;
+            padding: 8px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: block;
+        }
+        .button:hover {
+            background-color: #282828;
+        }
+        /* Full-screen overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .overlay img {
+            width: 90%;
+            height: auto;
+            max-width: 800px;
+            
+        }
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #171717;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Recommendation</h1>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="images/devTown.png" alt="DevTown">
+        </div>
+        <div class="text-and-button">
+            <p>DevTown</p>
+            <a href="#" class="button" onclick="showOverlay()">View Recommendation</a>
+        </div>
+    </div>
+
+    <!-- Full-screen overlay for the certificate -->
+    <div class="overlay" id="overlay">
+        <img src="images/recommendation.png" alt="Recommendation">
+        <div class="close-button" onclick="closeOverlay()">Close</div>
+    </div>
+
+    <script>
+        function showOverlay() {
+            document.getElementById('overlay').style.display = 'flex';
+        }
+
+        function closeOverlay() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Page</title>
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Black background */
+            color: #ffffff; /* White text */
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            margin: 20px 0;
+            margin-top: 40px;
+        }
+
+        .icons {
+            margin-top: 10px;
+        }
+
+        .icons a {
+            color: white;
+            font-size: 2.5rem; /* Icon size */
+            margin: 0 15px; /* Space between icons */
+            text-decoration: none;
+        }
+
+        .icons a:hover {
+            color: #ffffff; /* Gold color on hover */
+        }
+
+        hr {
+            border: 1px solid white;
+            margin: 20px auto;
+            width: 80%; /* Limit line width */
+        }
+
+        footer {
+            margin-top: 10px;
+            font-size: 1rem;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Horizontal Line -->
+    
+    <!-- Bottom Horizontal Line -->
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        2024©Aaishwarya Khalane <br>All Rights Reserved 
+    </footer>
+</body>
+</html>
