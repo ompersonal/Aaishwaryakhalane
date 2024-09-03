@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <meta charset="UTF-8">
+    
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 20px 0;
+        }
+        h1 {
+            text-align: left;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 3rem;
+            margin-top:-9px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            
+        }
+        button {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #333333;
+        }
+/* Dashboard menu styling */
+.dashboard {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff; /* Gold color */
+    margin: 4px 0;
+}
+
+.dashboard-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 40px; /* Adjust based on line height */
+    right: 0;
+    background-color: #d4d9d6; /* Dark background for menu */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dashboard-menu.show {
+    display: block; /* Show menu when 'show' class is added */
+}
+
+.dashboard-menu a {
+    color: #000000; /* White text color */
+    font-size: 2rem; /* Set text size */
+    text-decoration: none; /* Remove underline from links */
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #000000; /* Separator between items */
+}
+
+.dashboard-menu a:last-child {
+    border-bottom: none; /* Remove bottom border from last item */
+}
+
+.dashboard-menu a:hover {
+    background-color: #ffffff; /* Slightly lighter background on hover */
+    color: #ffffff; /* Gold text color on hover */
+}
+    </style>
+</head>
+<body>
+
+    <h1>Contact</h1>
+
+    <div class="container">
+        <form id="contactForm">
+            <label for="companyName">Company Name</label>
+            <input type="text" id="companyName" name="companyName" required>
+
+            <label for="companyEmail">Company Email</label>
+            <input type="email" id="companyEmail" name="companyEmail" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="emailBody">Email Body</label>
+            <textarea id="emailBody" name="emailBody" rows="6" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Simulate form submission
+            setTimeout(() => {
+                alert('Email failed to send. Please send an email manually to              Aaishwaryajk@gmail.com');
+            }, 500); // Simulate a delay to mimic real form submission
+
+            // Optionally reset the form
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+
+    <div class="dashboard">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="dashboard-menu" id="dashboardMenu">
+            <a href="index.html">Home</a>
+           
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
